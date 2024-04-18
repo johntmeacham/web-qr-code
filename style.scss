@@ -1,0 +1,43 @@
+@use 'css' as *;
+
+html {
+  font-family: $sans-serif-font-stack;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: $grayish-blue-clr;
+}
+
+body {
+  background: $light-gray-clr;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+.qr-code {
+  max-width: 320px;
+  background: $white-clr;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  border-radius: 2rem;
+
+  &__h1 {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: $dark-blue-clr;
+    padding: 1rem;
+  }
+
+  &__p {
+    padding: 0 1rem;
+  }
+
+  &__img {
+    max-width: 288px;
+    border-radius: $border-radius;
+  }
+}
